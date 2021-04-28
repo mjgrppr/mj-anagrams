@@ -19,4 +19,4 @@ jobs:
         name: run
         run:  |
           set -x
-          docker run --name test --volume ${PWD}/data/words.txt:/data/word.txt image:test
+          docker run --name test --volume ${PWD}/data/words.txt:/data/words.txt image:test
