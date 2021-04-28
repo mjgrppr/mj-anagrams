@@ -1,5 +1,5 @@
 FROM python
-COPY anagrams.py .
+COPY src/anagrams.py .
 
 ENTRYPOINT ["python"]
 CMD ["anagrams.py"]
