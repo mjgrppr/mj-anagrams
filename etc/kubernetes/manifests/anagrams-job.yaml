@@ -1,0 +1,33 @@
+apiVersion: bach/v1 
+kind: Job
+metadata:
+  name: anagrams-job
+spec:
+  template:
+    spec:
+      containers:
+        -
+          image: mjgrppr/mj-anagrams:latest
+          name: anagrams-container
+          volumeMounts:
+            -
+              mounthPath: /data
+              name: anagrams-volume
+              readOnly: true
+      initContainers:
+        -
+          args:
+            -
+              
+          command:
+          env:
+          image:
+          name:
+          volumeMounts:
+            -
+              
+      restartPolicy:
+      volumes:
+        -
+          
+      
