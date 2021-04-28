@@ -15,4 +15,8 @@ jobs:
         run: |
           set -x
           docker build  --tag image:test .
-        
+      -
+        name: run
+        run:  |
+          set -x
+          docker run --name test --volume ${PWD}/data/words.txt:/data/word.txt image:test
